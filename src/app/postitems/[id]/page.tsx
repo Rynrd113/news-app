@@ -43,7 +43,7 @@ export default function PostItem({ params }: { params: { id: string } }) {
   // Fungsi untuk mengambil data semua post
   const getItemsData = async () => {
     try {
-      const res = await fetch(`/api/postitems`);
+      const res = await fetch("/api/postitems");
       const data = await res.json();
       setItems(data);
     } catch (e) {
@@ -70,7 +70,7 @@ export default function PostItem({ params }: { params: { id: string } }) {
       const result = response.status;
       if (result === 200) {
         console.log("Success:", result);
-        router.push(`/postitems`);
+        router.push("/postitems");
       }
     } catch (error) {
       console.log("Error:", error);
