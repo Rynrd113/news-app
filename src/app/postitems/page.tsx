@@ -12,7 +12,7 @@ export default function PostItems() {
 
   // Fungsi untuk mengambil data semua postingan
   const getItemsData = () => {
-    fetch(`/api/postitems`)
+    fetch("/api/postitems")
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((e) => console.log(e.message));
