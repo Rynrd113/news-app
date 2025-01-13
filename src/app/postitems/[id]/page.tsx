@@ -83,7 +83,7 @@ export default function PostItem({ params }: { params: { id: string } }) {
         <div className="container">
           <div className="row">
             <div className="col-md-9 post-content">
-              {item && item.category ? (
+              {item?.category ? (
                 <div className="single-post">
                   <div className="post-meta">
                     <span className="date">{item.category}</span>
