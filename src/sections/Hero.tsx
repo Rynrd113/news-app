@@ -51,7 +51,7 @@ export default function Hero() {
                 prevEl: ".custom-swiper-button-prev",
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              loop={true}
+              loop
               className="sliderFeaturedPosts"
             >
               {heroSlides.map((slide) => (

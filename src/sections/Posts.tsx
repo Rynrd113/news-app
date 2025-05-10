@@ -70,7 +70,7 @@ export default function Posts() {
         <div className="row g-5">
           <div className="col-lg-4">
             {item._id ? (
-              <PostItemOne large={true} item={item} />
+              <PostItemOne large item={item} />
             ) : (
               <Preloader />
             )}
